@@ -1,0 +1,9 @@
+.cal {
+    padding: 25px;
+    margin: 50px;
+    border-radius: 25px;
+    width: 18%;
+    height: 300px;
+    float: left;
+    background-color: blue;
+}
