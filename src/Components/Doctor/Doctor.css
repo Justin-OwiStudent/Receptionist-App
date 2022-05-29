@@ -1,0 +1,125 @@
+.Doc-Card {
+    width: 80%;
+    height: 700px;
+    background-color: white;
+    float: left;
+    margin: 25px;
+    border: 2px solid black;
+}
+
+
+.profile-Card{
+    width: 25%;
+    height: 80%;
+    background-color: rgba(133, 133, 133, 0.288);
+    border: 5px solid black;
+    margin: 55px;
+    float: left;
+
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 75px;
+    background-image: url(../images/pfp.png);
+    background-size: cover;
+}
+
+.details{
+    margin-top: 35px;
+    width: 100%;
+    height: 250px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    margin-left: 5px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+
+.block {
+    float: left;
+    width: 60%;
+    height: 80%;
+    background-color: rgba(133, 133, 133, 0.575);
+    margin-top: 55px;
+    border: 5px solid black;
+}
+
+.block-1 {
+    width: 50%;
+    height: 100%;
+    
+    float: left;
+}
+
+.block-2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+
+
+.doc-patients{
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    margin: 35px;
+    border: 3px solid black;
+
+}
+
+.doc-appointments{
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    margin: 35px;
+    border: 3px solid black;
+
+}
+
+.doc-patients h2 {
+    margin-top: 5px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.doc-appointments h2 {
+    margin-top: 5px;
+    font-size: 35px;
+    text-decoration: underline;
+
+}
+
+.individual-patient{
+    margin: auto;
+    margin-top: 15px;
+    width: 95%;
+    height: 65px;
+    background-color: rgba(197, 197, 197, 0.658);
+    border: 1px solid black;
+}
+
+.appointment{
+    margin: auto;
+    margin-top: 15px;
+    width: 95%;
+    height: 65px;
+    background-color: rgba(197, 197, 197, 0.658);
+    border: 1px solid black;
+}
+
+h6 {
+    font-size: 15px;
+    margin-left: 20px;
+}

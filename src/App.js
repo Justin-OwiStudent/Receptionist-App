@@ -1,21 +1,30 @@
 import "./index.css";
-import Navigation from "./Nav/Navigation";
-import Button from "./button/Button";
-import Calender from "./Calender/Calender";
-import Appointments from "./appointments/Appointments";
-import Topnav from "./top-nav/Topnav";
-import User from "./User/User";
-import Doctor from "./Doctor/Doctor";
+import Navigation from "./Components/Nav/Navigation";
+import Button from "./Components/button/Button";
+import Calender from "./Components/Calender/Calender";
+import Appointments from "./Components/appointments/Appointments";
+import Topnav from "./Components/top-nav/Topnav";
+import User from "./Components/User/User";
+import Doctor from "./Components/Doctor/Doctor";
+import Patient from "./Components/Patient/Patient";
+import LoginReg from "./Components/loginReg/LoginReg"
+import Login from "./Components/Login/Login"
+
 
 function App() {
   return (
     <div className="app">
-        <Navigation></Navigation>
+
+        {/* <Login></Login> */}
+
+        <LoginReg></LoginReg>
+
+        {/* <Navigation></Navigation>
         <User></User>
         <Appointments></Appointments>
-        <Calender></Calender>
+        <Calender></Calender> */}
 
-        
+       
 
         {/* <Doctor></Doctor> */}
     </div>
