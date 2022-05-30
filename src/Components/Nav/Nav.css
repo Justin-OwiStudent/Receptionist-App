@@ -1,5 +1,5 @@
 .nav {    
-    width: 5%;
+    width: 8%;
     height: 100vh;
     background-color: #6AC1FF;
     float: left;
@@ -12,8 +12,8 @@
     margin-top: 25px;
     margin-bottom: 100px;
     width: 80%;
-    aspect-ratio: 1/1;
-    background-color: red;
+    height: 120px;
+    background-image: url(../images/healthcare.png);
     background-size: 100% 100%;
     border-radius: 25px;
 }
@@ -58,7 +58,7 @@
 
 h7 {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .nav-2 {
@@ -144,7 +144,7 @@ h7 {
 } */
 
 .btn {
-    width: 75px;
+    width: 80%;
     height: 40px;
     border-radius: 10px;
     background-color: #41adfa;

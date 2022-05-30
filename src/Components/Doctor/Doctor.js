@@ -39,7 +39,7 @@ const Doctor = () => {
             <div className="doc-appointments">
                 <h2>appointments</h2>
 
-                <div className="appointment">
+                <div className="appointments">
                     <h6>patient name: {}</h6> 
                     <h6>Room: {}</h6> 
                     <h6>Time: {}</h6> 

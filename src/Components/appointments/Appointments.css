@@ -6,9 +6,40 @@
     background-color: rgba(133, 133, 133, 0.288);
     border: 2px solid black;
     float: left;
+    margin-left: 20px;
 }
 
 h1 {
     text-align: center;
     text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    
+}
+
+
+  .appointment{
+      margin: auto;
+      width: 90%;
+      height: 300px;
+    background-color: rgba(197, 197, 197, 0.658);
+    box-shadow: 1px 6px 14px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 6px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 6px 14px 0px rgba(0,0,0,0.75);
+      
+  }
+
+  
+th {
+    border-bottom: 1px solid black;
+    font-size: 30px;
+}
+  
+td{
+    font-size: 25px;
+    margin-bottom: 5px;
+    
 }
