@@ -8,24 +8,25 @@ import Appointments from "./Components/appointments/Appointments";
 import Topnav from "../src/Components/top-nav/Topnav";
 import User from "./Components/User/User";
 import Doctor from "./Components/Doctor/Doctor";
+import Patient from "./Components/Patient/Patient";
+import NewAppoint from "./Components/new-appointments/NewAppoint";
 
 function App() {
   return (
     <div className="app">
         <Navigation></Navigation>
+
         {/* <User></User> */}
-        <Appointments></Appointments>
-        <Calender></Calender>
 
+    <Calender></Calender>
+    <NewAppoint></NewAppoint>
+    <Appointments></Appointments>
 
-      {/* make a useUstate to do a calculation and then call that usestate 
-      after a click or something 
+    
+        {/* <Appointments></Appointments>
+        <Calender></Calender> */}
 
-      doen jou werk !!!!!!!!!
-      werk hard !!!!!!!
-      hou op game !!!!!!
-      glo in jouself !!!! */}
-        
+        {/* <Patient></Patient> */}
 
         {/* <Doctor></Doctor> */}
     </div>

@@ -13,21 +13,20 @@ import Doctor from './Components/Doctor/Doctor';
 import Patient from './Components/Patient/Patient'
 import doctor from './Components/Doctor/Doctor'
 import LoginReg from './Components/loginReg/LoginReg'
+import Navigation from './Components/Nav/Navigation';
+import { Nav } from 'react-bootstrap';
 
 
 ReactDOM.render(
   
     <BrowserRouter>
      <Routes>
+
        <Route path="/" element={<App />} />
+       <Route path="/" element={<Navigation />} />
        <Route path="Doctor" element={<Doctor />} />
        <Route path="Patients" element={<Patient />} />
-
        <Route path="Log-in" element={<LoginReg />} />
-       
-       
-        
-    
       
      </Routes>
     </BrowserRouter>

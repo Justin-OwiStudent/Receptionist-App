@@ -31,7 +31,7 @@
     border: solid black 2px;
 }
 
-h5 {
+/* h5 {
     position: absolute;
     font-size: 35px;
     bottom: 180px;
@@ -50,7 +50,7 @@ h2 {
     margin-top: 50px;
     margin-left: 20px;
     font-size: 30px;
-}
+} */
 
 .Notifications {
     width: 90%;

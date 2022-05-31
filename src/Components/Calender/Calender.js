@@ -9,7 +9,7 @@ const Calender = () => {
     return(
         <>
         <div className='cal'>
-        <Calendar onChange={onChange} value={value} />
+            <Calendar onChange={onChange} value={value} />
         </div>
         </>
     )

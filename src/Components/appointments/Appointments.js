@@ -1,15 +1,17 @@
 import React from 'react';
-import './Appointments.css'
+import classes from './Appointment.module.css'
 
 
 
 const Appointments = () => {
     return(
         <>
-        <div className='appoint'>
+        
+        <div className={classes.appoint}>
             <h1>Appointments</h1>
 
-            <div className='appointment'>
+            <div className={classes.appointment}>
+                
                 <table>
                     <tr>
                     <th>Doctor</th>

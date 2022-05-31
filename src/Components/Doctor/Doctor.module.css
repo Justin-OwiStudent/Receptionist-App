@@ -1,10 +1,11 @@
-.Doc-Card {
+/* .Doc-Card {
     width: 80%;
     height: 700px;
-    background-color: white;
+    background-color: rgba(133, 133, 133, 0.288);
     float: left;
     margin: 25px;
     border: 2px solid black;
+    border-radius: 20px;
 }
 
 
@@ -15,7 +16,6 @@
     border: 5px solid black;
     margin: 55px;
     float: left;
-
 }
 
 .profile {
@@ -34,10 +34,6 @@
     height: 250px;
 }
 
-h2 {
-    font-size: 40px;
-    text-align: center;
-}
 
 h3 {
     margin-left: 5px;
@@ -122,4 +118,66 @@ h3 {
 h6 {
     font-size: 15px;
     margin-left: 20px;
+} */
+
+
+.heroImage{
+    float: left;
+    width: 60%;
+    height: 400px;
+    background-color: #ffff;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+.HeroText{
+    width: 60%;
+    float: left;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.Image{
+    width: 35%;
+    height: 100%;
+    float: left;
+    background-color: rgb(43, 255, 0);
+    background-image: url(../images/illustration.jpg);
+    background-size: 100% 100%;
+}
+
+.HeroText h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.HeroText h4 {
+    font-size: 25px;
+    margin: 15px;
+}
+
+.carousel {
+    width: 100%;
+    height: 450px;
+    float: left;
+    margin: 20px;
+    overflow: scroll;
+}
+
+.card{
+    width: 180px;
+    height: 300px;
+    background-color: red;
+    float: left;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.new {
+    float: left;
+    width: 15%;
+    height: 800px;
+    background-color: green;
+    margin-top: 50px;
+    border-radius: 25px;
 }
