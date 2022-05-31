@@ -18,24 +18,28 @@ const Doctor = () => {
           </h4>
         </div>
         <div className={classes.Image}></div>
+      </div>
 
-        <div className={classes.carousel}>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
-          <div className={classes.card}> </div>
+      <div className={classes.carousel}>
+        <div className={classes.card}>
+          <div className={classes.ProfilePic}></div>
+          <h2>Doc Name</h2>
+        </div>
+        <div className={classes.card}>
+          <div className={classes.ProfilePic}></div>
+          <h2>Doc Name</h2>
+        </div>{" "}
+        <div className={classes.card}>
+          <div className={classes.ProfilePic}></div>
+          <h2>Doc Name</h2>
+        </div>{" "}
+        <div className={classes.add}>
+          <div className={classes.plus}></div>
         </div>
       </div>
+      <div className={classes.new}></div>
 
-      <div className={classes.new}>
-
-      </div>
+      
 
       {/* <div className="Doc-Card">
         <div className="profile-Card">
