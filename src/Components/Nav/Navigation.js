@@ -8,7 +8,7 @@ import classes from "./Nav.module.css";
 import Navbar from "react-bootstrap/Navbar";
 import { Container, Form, FormControl, Nav } from "react-bootstrap";
 import { Button } from "bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -74,20 +74,28 @@ const Navigation = () => {
 
   
         
-
+        <Link to="Doctor">
         <div className={classes.navItem}>
           <div className={classes.smaller}>
             <div className={classes.img1}></div>
             <div className={classes.text1}>Doctor</div>
           </div>
         </div>
-
+        </Link>
+      
+        
+        
+        
+        
+        <Link to="Patient">
         <div className={classes.navItem}>
           <div className={classes.smaller}>
             <div className={classes.img2}></div>
             <div className={classes.text2}>Patients</div>
           </div>
         </div>
+        </Link>
+        
 
 
         <div className={classes.profile}>
@@ -96,7 +104,7 @@ const Navigation = () => {
           <div className={classes.edit}>
             <div className={classes.texti}>
               
-              <p>settings          </p>
+              <p> Logout </p>
             </div>
           </div>
           

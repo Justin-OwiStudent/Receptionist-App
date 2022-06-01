@@ -20,13 +20,15 @@ import { Nav } from 'react-bootstrap';
 ReactDOM.render(
   
     <BrowserRouter>
+    <Navigation></Navigation>
      <Routes>
 
-       <Route path="/" element={<App />} />
-       <Route path="/" element={<Navigation />} />
-       <Route path="Doctor" element={<Doctor />} />
-       <Route path="Patients" element={<Patient />} />
-       <Route path="Log-in" element={<LoginReg />} />
+      <Route path="/" element={<App />} />
+      <Route path="/Navigation" element={<Navigation/>} />
+      <Route path="/Doctor" element={<Doctor />} />
+      <Route path="/Patient" element={<Patient />} />
+
+      
       
      </Routes>
     </BrowserRouter>

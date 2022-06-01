@@ -195,7 +195,8 @@ h7 {
     width: 100px;
     height: 100px;
     background-color: green;
-    background-image: url(../images/pfp.png);
+    background-image: url(../images/receppfp.png);
+    border: 1px solid black;
     background-size: 100% 100%;
     margin: 25px;
     border-radius: 50px;

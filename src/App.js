@@ -16,11 +16,10 @@ function App() {
     <div className="app">
         <Navigation></Navigation>
 
-        {/* <User></User> */}
 
-    <Calender></Calender>
-    <NewAppoint></NewAppoint>
-    <Appointments></Appointments>
+        <Calender></Calender>
+        <NewAppoint></NewAppoint>
+        <Appointments></Appointments>
 
     
         {/* <Appointments></Appointments>

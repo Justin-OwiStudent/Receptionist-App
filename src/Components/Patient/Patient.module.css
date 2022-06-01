@@ -1,0 +1,43 @@
+.mainBlock {
+    margin: 50px;
+    width: 75%;
+    height: 650px;
+
+    float: left;
+}
+
+.Pat{
+    font-weight: 400;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.PatientCard{
+    width: 240px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.ProfImage{
+    margin: 5px;
+    width: 95%;
+    height: 60%;
+    background-color: red;
+    border-radius: 25px 25px 5px 5px;
+    border: 1px solid black;
+}
+
+.PatientCard:hover{
+    background-color: rgb(231, 231, 231);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.PatientCard h2 {
+    font-weight: 400;
+    margin: 5px;
+}
