@@ -209,6 +209,7 @@ h5 {
 }
 
 .edit {
+   
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -219,7 +220,7 @@ h5 {
 
 
 
-.texti {
+.textI {
     
     position: absolute;
     left: 50%;
@@ -235,9 +236,8 @@ p {
     margin: 10px;
 }
 
-.texti:hover {
+.textI:hover {
     background-color: #3459EC;
     color: white;
-    opacity: 0.6;
-    transition: 1s; 
+    transition: 0.1s; 
 }

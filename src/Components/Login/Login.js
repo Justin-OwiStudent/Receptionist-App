@@ -1,21 +1,28 @@
 import React from "react";
-import './Login.css'
+import { Link } from "react-router-dom";
+import classes from "./Login.module.css";
 
 const Login = () => {
-    return(
+  return (
+    <div className={classes.Main}>
+      <div className={classes.loginCon}>
+        <h1 className={classes.LoginTex}>Login Form</h1>
+        <form>
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+          <button type="submit" className={classes.butt}>Login User</button>
+        </form>
+
+        <Link to="/Register">
+        <p className={classes.RegText}> Register </p>
+
+        </Link>
         
-        <div>
-        <div className="loginCon">
-              <h1>Login Form</h1>
-              <form>
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <button type="submit">Login User</button>
-              </form>
-            </div>
-        </div>
-        
-    )
-}
+
+
+      </div>
+    </div>
+  );
+};
 
 export default Login;

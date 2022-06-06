@@ -37,7 +37,17 @@ const Doctor = () => {
           <div className={classes.plus}></div>
         </div>
       </div>
-      <div className={classes.new}></div>
+      <div className={classes.new}>
+        <div className={classes.DocImg} ></div>
+          <input placeholder="Name & Surname"></input>
+          <input placeholder="Email"></input>
+          <input placeholder="Contact Number"></input>
+          <input placeholder=" "></input>
+          <input placeholder="Name & Surname"></input>
+
+          <button className={classes.bott}> Add Doctor</button>
+
+      </div>
 
       
 

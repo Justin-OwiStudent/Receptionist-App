@@ -70,57 +70,41 @@ const Navigation = () => {
       </div> */}
 
       <div className={classes.nav}>
-        <div className={classes.LOGO}></div>
+        <Link to="App">
+          <div className={classes.LOGO}></div>
+        </Link>
 
-  
-        
         <Link to="Doctor">
-        <div className={classes.navItem}>
-          <div className={classes.smaller}>
-            <div className={classes.img1}></div>
-            <div className={classes.text1}>Doctor</div>
+          <div className={classes.navItem}>
+            <div className={classes.smaller}>
+              <div className={classes.img1}></div>
+              <div className={classes.text1}>Doctor</div>
+            </div>
           </div>
-        </div>
         </Link>
-      
-        
-        
-        
-        
-        <Link to="Patient">
-        <div className={classes.navItem}>
-          <div className={classes.smaller}>
-            <div className={classes.img2}></div>
-            <div className={classes.text2}>Patients</div>
-          </div>
-        </div>
-        </Link>
-        
 
+        <Link to="Patient">
+          <div className={classes.navItem}>
+            <div className={classes.smaller}>
+              <div className={classes.img2}></div>
+              <div className={classes.text2}>Patients</div>
+            </div>
+          </div>
+        </Link>
 
         <div className={classes.profile}>
           <div className={classes.pfp}></div>
           <h5>Logged in receptionist</h5>
+        </div>
+
+        <Link to="Login">
           <div className={classes.edit}>
-            <div className={classes.texti}>
-              
+            <div className={classes.textI}>
               <p> Logout </p>
             </div>
           </div>
-          
-        </div>
-        {/* <div className={classes.navItem}>
-        <div className={classes.img1}></div>
-          <div className={classes.text1}>Doctor</div>
-        </div> */}
+        </Link>
 
-        {/* <div className={classes.navItem}>
-
-        </div>
-
-        <div className={classes.navItem}>
-
-        </div> */}
       </div>
     </>
   );

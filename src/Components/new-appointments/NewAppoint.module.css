@@ -30,7 +30,7 @@
     background-color: #f7f7f7;
     margin-left: 50px;
     float: left;
-    border: 0.5px solid black;
+    
     margin-top: 10px;
 }
 
@@ -63,4 +63,38 @@
     margin-top: 100px;
     border-radius: 25px;
     border: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.PatientPfp{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    float: left;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.Pname {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.Detail1 {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+   
+}
+
+.Detail2 {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+}
+
+.Detail3 {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
 }
