@@ -15,7 +15,7 @@ import Calender from "./Components/Calender/Calender";
 import NewAppoint from "./Components/new-appointments/NewAppoint";
 import Appointments from "./Components/appointments/Appointments";
 import Login from "./Components/Login/Login";
-import Register from "./Register/Register";
+import Register from "./Components/Register/Register";
 
 ReactDOM.render(
   <BrowserRouter>

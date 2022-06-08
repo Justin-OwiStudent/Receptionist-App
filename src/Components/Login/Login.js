@@ -10,6 +10,7 @@ const Login = () => {
         <form>
           <input type="text" placeholder="Username" />
           <input type="password" placeholder="Password" />
+          <p className={classes.forgot}>Forgot Password?</p>
           <button type="submit" className={classes.butt}>Login User</button>
         </form>
 

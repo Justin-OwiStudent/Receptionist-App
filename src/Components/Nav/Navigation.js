@@ -78,7 +78,7 @@ const Navigation = () => {
           <div className={classes.navItem}>
             <div className={classes.smaller}>
               <div className={classes.img1}></div>
-              <div className={classes.text1}>Doctor</div>
+              <div className={classes.text1}>Doctors</div>
             </div>
           </div>
         </Link>
@@ -94,7 +94,8 @@ const Navigation = () => {
 
         <div className={classes.profile}>
           <div className={classes.pfp}></div>
-          <h5>Logged in receptionist</h5>
+          <h5>Name & Surname</h5>
+          <h6> Chief Therapist </h6>
         </div>
 
         <Link to="Login">

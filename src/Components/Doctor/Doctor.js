@@ -6,7 +6,7 @@ const Doctor = () => {
     <>
       <div className={classes.heroImage}>
         <div className={classes.HeroText}>
-          <h1>Welcome Doctor</h1>
+          <h1>Welcome logged in recep</h1>
           <h4>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -21,29 +21,54 @@ const Doctor = () => {
       </div>
 
       <div className={classes.carousel}>
+
         <div className={classes.card}>
+        <div className={classes.Icon}></div>
           <div className={classes.ProfilePic}></div>
           <h2>Doc Name</h2>
+          <h3>Type</h3>
+          <h3>Available</h3>
         </div>
+
         <div className={classes.card}>
+        <div className={classes.Icon}></div>
           <div className={classes.ProfilePic}></div>
           <h2>Doc Name</h2>
+          <h3>Type</h3>
+          <h3>Available</h3>
         </div>{" "}
+
         <div className={classes.card}>
+        <div className={classes.Icon}></div>
           <div className={classes.ProfilePic}></div>
           <h2>Doc Name</h2>
+          <h3>Type</h3>
+          <h3>Available</h3>
         </div>{" "}
-        <div className={classes.add}>
+
+        
+        <div className={classes.card}>
+        <div className={classes.Icon}></div>
+          <div className={classes.ProfilePic}></div>
+          <h2>Doc Name</h2>
+          <h3>Type</h3>
+          <h3>Available</h3>
+        </div>{" "}
+
+
+        {/* <div className={classes.add}>
           <div className={classes.plus}></div>
-        </div>
+        </div> */}
       </div>
+
       <div className={classes.new}>
+        
         <div className={classes.DocImg} ></div>
           <input placeholder="Name & Surname"></input>
           <input placeholder="Email"></input>
           <input placeholder="Contact Number"></input>
           <input placeholder=" "></input>
-          <input placeholder="Name & Surname"></input>
+          {/* <input placeholder="Name & Surname"></input> */}
 
           <button className={classes.bott}> Add Doctor</button>
 

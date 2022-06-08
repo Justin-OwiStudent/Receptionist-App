@@ -40,15 +40,15 @@ const NewAppoint = () => {
         <h1> New Appointment </h1>
 
         <form >
-          <input placeholder="Patient Name" className={classes.inp}></input>
+          <input placeholder="Patient Name & Surname" className={classes.inp}></input>
 
           <input placeholder="Doctor" className={classes.inp}></input>
 
-          <input placeholder="Room" className={classes.inp}></input>
+          <input placeholder="Room Number" className={classes.inp}></input>
 
-          <input placeholder="Time" className={classes.inp}></input>
+          <input placeholder="Appointment Time" className={classes.inp}></input>
 
-          <input placeholder="Date" className={classes.inp}></input>
+          <input placeholder="Appointment Date" className={classes.inp}></input>
         
 
           <button className={classes.botn}> Add Patient </button>

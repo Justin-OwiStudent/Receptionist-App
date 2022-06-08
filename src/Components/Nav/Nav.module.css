@@ -161,6 +161,11 @@ h7 {
     height: 100%;
     text-align: center;
     padding-top: 20px;
+    color: black;
+}
+
+.text1:hover {
+    color: #3459EC;
 }
 
 .img2 {
@@ -179,6 +184,11 @@ h7 {
     height: 100%;
     text-align: center;
     padding-top: 20px;
+    color: black;
+}
+
+.text2:hover {
+    color: #3459EC;
 }
 
 
@@ -204,8 +214,16 @@ h7 {
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 20px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 400;
 }
 
 .edit {
@@ -221,7 +239,6 @@ h5 {
 
 
 .textI {
-    
     position: absolute;
     left: 50%;
     bottom: 25%;
@@ -234,10 +251,16 @@ p {
     font-size: 30px;
     text-align: center;
     margin: 10px;
+    color: black;
+
 }
 
 .textI:hover {
     background-color: #3459EC;
     color: white;
     transition: 0.1s; 
+}
+
+p:hover {
+    color: white;
 }
