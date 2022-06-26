@@ -1,9 +1,14 @@
 import React from "react";
+import Navigation from "../Nav/Navigation";
 import classes from "./Doctor.module.css";
 
 const Doctor = () => {
+
+  
   return (
     <>
+    <Navigation></Navigation>
+
       <div className={classes.heroImage}>
         <div className={classes.HeroText}>
           <h1>Welcome logged in recep</h1>

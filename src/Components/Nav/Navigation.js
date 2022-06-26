@@ -7,8 +7,8 @@ import classes from "./Nav.module.css";
 
 import Navbar from "react-bootstrap/Navbar";
 import { Container, Form, FormControl, Nav } from "react-bootstrap";
-import { Button } from "bootstrap";
-import { Link, NavLink } from "react-router-dom";
+
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -105,8 +105,9 @@ const Navigation = () => {
             </div>
           </div>
         </Link>
-
+        <Outlet />
       </div>
+      
     </>
   );
 };

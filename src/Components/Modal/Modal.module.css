@@ -1,0 +1,266 @@
+.alertMiniModal{
+    width:300px;
+    height: auto;
+    background-color: #ff7675;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin-top: -40px;
+    margin-left: -24%;
+    padding-top: 10px;
+    /* box-shadow: 10px 10px 27px 0px rgba(255, 0, 0, 0.719); */
+
+
+    border: 1px solid black;
+    
+}
+
+
+.preps  {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+.alertMiniModal img{
+    width: 15px;
+    position: absolute;
+    right: -8px;
+    top: 2px;
+    width: 9px;
+    position: absolute;
+    right: -8px;
+    top: 5px;
+}
+
+
+.alertMiniModalRight {
+    width:250px;
+    height: 30px;
+    background-color: salmon;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin-top: -40px;
+    margin-left: 40%;
+    padding-top: 5px;
+    box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.18);
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.18);;
+}
+
+.prepsRight {
+    font-size: 15px;
+}
+
+
+.alertPatientModal {
+    width: 250px;
+    height: 40px;
+    background-color: red;
+    margin-left: 570px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    position: relative;
+
+}
+
+.rowe {
+    margin: auto;
+    margin-top: 5px;
+    width:95%;
+    height: 100px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .prof {
+    width: 120px;
+    height: 100%;
+    background-color: red;
+    margin-right: 10px;
+    float: left;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  
+  }
+  .trash {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 25%;
+    width: 25px;
+    background-image: url(../images/bin.png);
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .edit {
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    height: 25%;
+    width: 25px;
+    background-image: url(../images/edit.png);
+    background-size: 100%;
+    cursor: pointer;
+  }
+
+  .PatientCard{
+    width: 240px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.ProfImage{
+    margin: 5px;
+    margin: auto;
+    width: 50%;
+    height: 35%;
+    background-image: url(../images/cat.jpg);
+    background-size: 100%;
+    /* border-radius: 25px 25px 5px 5px; */
+    border-radius: 60px;
+    border: 1px solid black;
+}
+
+
+
+
+.PatientCard p {
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+p:hover{
+    color: black;
+}
+
+.PatientCard h2{
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #3459EC;
+}
+
+.PatientCard h3 {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+/* 
+.alertMiniModal{
+    width:300px;
+    height: 25px;
+    background-color: rgb(238, 24, 0);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin-left: -43%;
+    padding-top: 10px;
+    box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.18);
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.18);
+}
+
+#lele {
+    position: absolute;
+    left: 25px;
+    top: 75px;
+    width: 30px;
+    height: 70px;
+    
+}
+
+.alertMiniModalRight {
+    width: 200px;
+    height: 25px;
+    background-color: salmon;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    right: -201px;
+    position: absolute;
+    padding-top: 10px;
+    box-shadow: 10px 10px 5px -7px rgb(0 0 0 / 18%);
+    -webkit-box-shadow: 10px 10px 5px -7px rgb(0 0 0 / 18%);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.18);
+}
+
+
+
+.alertMiniModal p{
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+.alertMiniModalRight p{
+    margin: 0;
+    padding: 0;
+}
+
+.alertMiniModal img{
+    width: 10px;
+    position: absolute;
+    right: -8px;
+    top: 2px;
+    width: 9px;
+    position: absolute;
+    right: -8px;
+    top: 5px;
+}
+
+.alertMiniModalRight img{
+    width: 10px;
+    position: absolute;
+    right: -8px;
+    top: 2px;
+    width: 9px;
+    position: absolute;
+    right: -8px;
+    top: 5px;
+}
+
+.alertMiniModalRight img{
+    width: 10px;
+    position: absolute;
+    left: -8px;
+    top: 2px;
+    width: 9px;
+    position: absolute;
+    right: -8px;
+    top: 5px;
+    transform: rotate(180deg);
+}
+
+.statusIcon{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 30px;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+.statusIconUser{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 38%;
+    border-radius: 5px;
+} */
+

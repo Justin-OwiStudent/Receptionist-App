@@ -23,14 +23,17 @@
     font-weight: 400;
 }
 
-
+.area {
+    width: 90%;
+    margin-left: 50px;
+    
+}
 
 .inp{
     width: 60%;
     background-color: #f7f7f7;
     margin-left: 50px;
     float: left;
-    
     margin-top: 10px;
 }
 
@@ -48,6 +51,7 @@
     font-size: 15px;
     color: white;
     cursor: pointer;
+    position: relative;
 }
 
 .botn:hover {

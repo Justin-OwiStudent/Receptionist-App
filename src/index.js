@@ -20,16 +20,27 @@ import Register from "./Components/Register/Register";
 ReactDOM.render(
   <BrowserRouter>
 
-    <Navigation></Navigation>
+    
 
     <Routes>
-      
+
+    {/* <Route path="/Navigation" element={<Navigation />} >
       <Route path="/App" element={<App />} />
-      <Route path="/Navigation" element={<Navigation />} />
       <Route path="/Doctor" element={<Doctor />} />
       <Route path="/Patient" element={<Patient />} />
+    </Route> */}
+
+
+
+      <Route path="/App" element={<App />} />
+
       <Route path="/Login" element={<Login />} />
       <Route path="/Register" element={<Register />} />
+      
+      
+      <Route path="/Doctor" element={<Doctor />} />
+      <Route path="/Patient" element={<Patient />} />
+     
 
     </Routes>
   </BrowserRouter>,

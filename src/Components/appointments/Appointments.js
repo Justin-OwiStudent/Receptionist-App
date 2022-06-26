@@ -1,9 +1,38 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import PostItem from '../Modal/PostItem';
 import classes from './Appointment.module.css'
 
 
 
 const Appointments = () => {
+
+  const [posts, setPosts] = useState();
+
+  const [renderPost, setRenderPost] = useState();
+
+  useEffect(()=>{
+    axios.get("http://localhost/receptionistapplication/ReadAppointments.php")
+    .then((res)=> {
+        let data = res.data;
+
+        let renderPost = data.map((item,index) => <PostItem id={index} patient={item.Patient} doctor={item.Doctor} />);
+        
+        setPosts(renderPost);   
+        setRenderPost(false);
+    })
+    .catch(err=>{
+        console.log(err)
+    })
+
+  }, [renderPost]);
+
+//   const postVal = (e) => {
+//     let 
+//   }
+
+
+
     return(
         <>
         
@@ -12,51 +41,18 @@ const Appointments = () => {
 
             <div className={classes.appointment}>
                 
-                <table>
-                    <tr>
-                    <th>Doctor</th>
-                    <th>Patient</th>
-                    <th>Room</th>
-                    </tr>
-                   <tr>
-                       <td>strange</td>
-                       <td>bundy</td>
-                       <td>626</td>
-                   </tr>
-                   <tr>
-                       <td>strange</td>
-                       <td>bundy</td>
-                       <td>626</td>
-                   </tr>
-                </table>
+             {posts}
+                
+                {/* <div className={classes.rowe}>
+                    <div className={classes.prof}></div>
+                    <h2></h2>
+                    <h2></h2>
+                    <div className={classes.trash}></div>
+                    <div className={classes.edit}></div>
+                </div> */}
+
+
             </div>
-            
-            {/* <table>
-                <tr>
-                    <th> Doctor </th>
-                    <th> Patient </th>
-                    <th> Room </th>
-
-                </tr>
-                <div className='appointment'>
-                <tr>
-                    <td>doc{}</td>
-                    <td>pat{}</td>
-                    <td>room{}</td>
-
-
-                </tr>
-                </div>
-                <div className='appointment'>
-                <tr>
-                    <td>doc{}</td>
-                    <td>pat{}</td>
-                    <td>room{}</td>
-
-
-                </tr>
-                </div>
-            </table> */}
         </div>
      
         </> 
