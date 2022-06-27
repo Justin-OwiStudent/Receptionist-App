@@ -163,11 +163,18 @@ h6 {
 
 .carousel {
     width: 60%;
-    height: 400px;
+    height: 1000px;
     float: left;
     margin: 20px;
     overflow: auto;
-    float: left;
+    
+}
+
+.Pat{
+    font-weight: 400;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #3459EC;
 }
 
 .card{
@@ -251,10 +258,11 @@ h6 {
 /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); */
 
 .new {
-    float: left;
+    float: right;
+    margin-right: 30px;
     width: 20%;
     height: 800px;
-    margin-top: -300px;
+    margin-top: 40px;
     border-radius: 25px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     padding-left: 25px;
@@ -270,6 +278,12 @@ h6 {
     float: left;
     box-shadow: 0 0 4px rgba(0, 0, 0, 1);
     
+}
+
+.emp {
+    width: 70%;
+    margin-top: 15px;
+    position: relative;
 }
 
 .DInputs{

@@ -1,27 +1,23 @@
 import axios from "axios";
 import React, { useState } from "react";
-import EditPost from "./EditPost";
+import EditDoc from "./EditDoc";
 import classes from "./Modal.module.css";
 
-const Card = (props) => {
-
-
-    // if statement for male and female
+const DocCard = (props) => {
 
     const [modal, setModal] = useState();
 
     const editPost = () => {
-      setModal(<EditPost upRender={props.rerender} rerender={setModal} originalName={props.NameSurname} originalAge={props.Age} originalEmail={props.Email} originalContact={props.Contact} id={props.uniqueId}  />)
+      setModal(<EditDoc upRender={props.rerender} rerender={setModal} originalName={props.NameSurname} originalAge={props.Age} originalEmail={props.Email} originalContact={props.Contact} id={props.uniqueId}  />)
     }
 
 
     const deletePost = () => {
-      if(window.confirm("Are you sure you want to delete this patient?") == true){
+      if(window.confirm("Are you sure you want to delete this Doctor?") == true){
         
         let postId = {id: props.uniqueId}
         
-
-        axios.post('http://localhost/receptionistapplication/DeletePatient.php', postId)
+        axios.post('http://localhost/receptionistapplication/DeleteDoctor.php', postId)
         .then((res)=>{
           let data = res.data;
           console.log(data);
@@ -29,10 +25,11 @@ const Card = (props) => {
       });
 
       } else {
-        console.log("The Patient was not Deleted")
+        console.log("The Doctor was not Deleted")
       }
     
     }
+
 
 
   return (
@@ -43,20 +40,19 @@ const Card = (props) => {
         <h2>{props.NameSurname} </h2>
 
         <div className={classes.ProfImage}></div>
-        {/* <p>patient Age:</p> */}
+    
         <h3>{props.Age}</h3>
-        {/* <p>patient Gender:</p> */}
-        <h3>{props.Gender}</h3>
-        {/* <p>patient Email:</p> */}
+        
         <h3>{props.Email}</h3>
+        
         <h3>{props.Contact}</h3>
 
         <div className={classes.trashi} onClick={deletePost} > </div>
         <div className={classes.editi} onClick={editPost}></div>
-
+        
       </div>
     </div>
   );
 };
 
-export default Card;
+export default DocCard;

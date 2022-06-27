@@ -18,7 +18,7 @@ const Login = () => {
 const usernameVal = (e) => {
   const value = e.target.value.trim();
   setInputs({...inputs, username: value});
-  //Add Validation here like we did last week
+  
 
 
   //modal no user exists
@@ -27,7 +27,7 @@ const usernameVal = (e) => {
 const passwordVal = (e) => {
   const value = e.target.value.trim();
   setInputs({...inputs, password: value});
-  //Add Validation here like we did last week
+ 
 
   //modal incorrect password
   
@@ -56,7 +56,7 @@ const passwordVal = (e) => {
   
                if(response.data === true){
                   sessionStorage.setItem('activeUser', inputs.username);
-                   navigate("/App");
+                   navigate("/Dashboard");
                } else {
                  console.log('Not working')
                }

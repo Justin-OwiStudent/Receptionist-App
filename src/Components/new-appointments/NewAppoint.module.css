@@ -6,6 +6,7 @@
     float: left;
     margin-top: 75px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 .sel1{
@@ -34,19 +35,20 @@
     background-color: #f7f7f7;
     margin-left: 50px;
     float: left;
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 
 
 .botn {
-    width: 150px;
-    height: 50px;
+    width: 80px;
+    height: 20px;
     background-color: #3459EC;
     float: left;
+    padding: 20px;
     margin-top: 60px;
     margin-left: -150px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 0px;
     font-size: 15px;
     color: white;

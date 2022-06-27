@@ -4,30 +4,36 @@ import Navigation from "../src/Components/Nav/Navigation";
 import Appointments from "./Components/appointments/Appointments";
 import NewAppoint from "./Components/new-appointments/NewAppoint";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import Login from "./Components/Login/Login";
+import Register from "./Components/Register/Register";
+import Doctor from "./Components/Doctor/Doctor";
+import Patient from "./Components/Patient/Patient";
+import Dashboard from "./Components/dashboard/Dashboard";
 
 
 
 function App() {
-
-  const navigate = useNavigate();
-
-  useEffect(() =>{
-    const userSession = sessionStorage.getItem('activeUser');
-    console.log(userSession)
-
-    if(userSession === '' || userSession === undefined){
-      navigate('/');
-    }
-    
-  }, []);
-
   return (
     <div className="App">
 
+     
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Login" element={<Login />} />
+
+        <Route path="/Dashboard" element={<Dashboard />} />
+
+
+        <Route path="/Doctor" element={<Doctor />} />
+        <Route path="/Patient" element={<Patient />} />
+    </Routes>
+    
+{/* 
       <Navigation></Navigation>
       <Appointments></Appointments> 
-      <NewAppoint></NewAppoint>
+      <NewAppoint></NewAppoint> */}
       
     </div>
   );

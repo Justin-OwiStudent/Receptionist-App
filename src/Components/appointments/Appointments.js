@@ -15,8 +15,7 @@ const Appointments = () => {
     axios.get("http://localhost/receptionistapplication/ReadAppointments.php")
     .then((res)=> {
         let data = res.data;
-
-        let renderPost = data.map((item,index) => <PostItem id={index} patient={item.Patient} doctor={item.Doctor} />);
+        let renderPost = data.map((item) => <PostItem key={item.id} time={item.AppointmentDate} patient={item.Patient} doctor={item.Doctor} />);
         
         setPosts(renderPost);   
         setRenderPost(false);
@@ -24,12 +23,7 @@ const Appointments = () => {
     .catch(err=>{
         console.log(err)
     })
-
-  }, [renderPost]);
-
-//   const postVal = (e) => {
-//     let 
-//   }
+    }, [renderPost]);
 
 
 
@@ -38,20 +32,8 @@ const Appointments = () => {
         
         <div className={classes.appoint}>
             <h1>Appointments</h1>
-
-            <div className={classes.appointment}>
-                
-             {posts}
-                
-                {/* <div className={classes.rowe}>
-                    <div className={classes.prof}></div>
-                    <h2></h2>
-                    <h2></h2>
-                    <div className={classes.trash}></div>
-                    <div className={classes.edit}></div>
-                </div> */}
-
-
+            <div className={classes.appointment}>           
+                {posts}
             </div>
         </div>
      

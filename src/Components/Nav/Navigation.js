@@ -1,80 +1,33 @@
-import { createRoot } from "react-dom/client";
-import React, { useState, Offcanvas } from "react";
-import OffcanvasHeader from "react-bootstrap/OffcanvasHeader";
-import OffcanvasTitle from "react-bootstrap/OffcanvasTitle";
-import OffcanvasBody from "react-bootstrap/OffcanvasBody";
+
+import React, { useState, useEffect } from "react";
 import classes from "./Nav.module.css";
-
-import Navbar from "react-bootstrap/Navbar";
-import { Container, Form, FormControl, Nav } from "react-bootstrap";
-
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, Navigate, NavLink, Outlet } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
+
+  const navigate = useNavigate();
+
+  const [logged, setLogged] = useState();
+
+  useEffect(()=>{
+    let personName = sessionStorage.getItem("activeUser");
+    setLogged(personName);
+  }, [])
+
+  const setLogout = () => {
+    sessionStorage.clear()
+    Navigate('/');
+  }
+
   return (
     <>
-      {/* {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand) => (
-    <Navbar key={expand} bg="light" expand={expand} className="mb-3">
-      <Container fluid>
-        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
-        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-        <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-${expand}`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-          placement="end"
-        >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-              Offcanvas
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-              
-            </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
-      </Container>
-    </Navbar>
-  ))} */}
-
-      {/* <div className="nav">
-        <div className="LOGO"> </div>
-
-        <Link to="Doctor">
-          <div className="nav-1">
-            <div className="img-1"></div> <h7>Doctor</h7>
-          </div>
-        </Link>
-
-        <Link to="Patient">
-          <div className="nav-2">
-            <div className="img-2"></div> <h7>Patients</h7>
-          </div>
-        </Link>
-
-        <div className="btn">
-          <h3>Log In</h3>
-        </div>
-      </div> */}
-
       <div className={classes.nav}>
-        <Link to="App">
+        <Link to="/Dashboard">
           <div className={classes.LOGO}></div>
         </Link>
 
-        <Link to="Doctor">
+        <Link to="/Doctor">
           <div className={classes.navItem}>
             <div className={classes.smaller}>
               <div className={classes.img1}></div>
@@ -83,7 +36,7 @@ const Navigation = () => {
           </div>
         </Link>
 
-        <Link to="Patient">
+        <Link to="/Patient">
           <div className={classes.navItem}>
             <div className={classes.smaller}>
               <div className={classes.img2}></div>
@@ -94,14 +47,13 @@ const Navigation = () => {
 
         <div className={classes.profile}>
           <div className={classes.pfp}></div>
-          <h5>Name & Surname</h5>
-          <h6> Chief Therapist </h6>
+          <h5>{logged}</h5>
         </div>
 
-        <Link to="Login">
+        <Link to="/Login">
           <div className={classes.edit}>
             <div className={classes.textI}>
-              <p> Logout </p>
+              <p onClick={setLogout}> Logout </p>
             </div>
           </div>
         </Link>

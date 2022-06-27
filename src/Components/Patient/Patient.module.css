@@ -1,6 +1,6 @@
 .mainBlock {
-    margin: 50px;
-    width: 55%;
+    margin: 20px;
+    width: 60%;
     height: 850px;
     float: left;
     overflow: scroll;
@@ -16,6 +16,7 @@
     font-weight: 400;
     margin-left: 20px;
     font-size: 40px;
+    color: #3459EC;
 }
 
 .PatientCard{
@@ -61,7 +62,8 @@ h3 {
 }
 
 .new {
-    float: left;
+    float: right;
+    margin-right: 30px;
     width: 20%;
     height: 800px;
     margin-top: 50px;

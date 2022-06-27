@@ -35,6 +35,7 @@ const NewAppoint = () => {
     .catch(error => {
       console.log(error)
     });
+    window.location.reload();
   }
 
   // if (result) {
@@ -231,6 +232,7 @@ const NewAppoint = () => {
         <h1> New Appointment </h1>
 
         <form >
+          
           <input placeholder="Patient Name & Surname" className={classes.inp} ref={Patient} ></input>
           {/* {PatientError} */}
 

@@ -80,12 +80,16 @@
   }
   
   .prof {
-    width: 120px;
-    height: 100%;
-    background-color: red;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #3459ec00;
+    background-image: url(../images/appointment.png);
+    background-size: 100%;
     margin-right: 10px;
     float: left;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    
   
   }
   .trash {
@@ -118,18 +122,19 @@
     margin: 20px;
     border-radius: 25px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 .ProfImage{
     margin: 5px;
     margin: auto;
     width: 50%;
-    height: 35%;
-    background-image: url(../images/cat.jpg);
+    height: 34%;
+    background-image: url(../images/user.png);
     background-size: 100%;
     /* border-radius: 25px 25px 5px 5px; */
     border-radius: 60px;
-    border: 1px solid black;
+    
 }
 
 
@@ -149,15 +154,152 @@ p:hover{
     margin: auto;
     text-align: center;
     margin-bottom: 5px;
-    color: #3459EC;
+    color: #3459EC
+    ;
 }
 
-.PatientCard h3 {
+ h3 {
     margin-left: 10px;
     font-weight: 400;
-    font-size: 20px;
+    
 
 }
+
+
+
+.trashi {
+    position: absolute;
+    top: 300px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    background-image: url(../images/bin.png);
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .editi {
+    position: absolute;
+    top: 300px;
+    right: 60px;
+    height: 25px;
+    width: 25px;
+    background-image: url(../images/edit.png);
+    background-size: 100%;
+    cursor: pointer;
+  }
+
+  h2{
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  h3{
+    font-weight: 800;
+    font-size: 10px;
+  }
+
+
+/* patiend modal */
+  .modal {
+    padding: 20px;
+    width: 500px;
+    height: 350px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 10px;
+    border: #3459EC solid 1px;
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    z-index: 999;
+    
+  }
+
+  .PatBut {
+    width: 30%;
+    height: 45px;
+    font-size: 20px;
+    background-color: #3459EC;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .PatButi {
+    margin-left: 50px;
+    width: 20%;
+    height: 45px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: red solid 1px;
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .PatButi:hover {
+    background-color: red;
+    color: white;
+    border: white solid 1px;
+  }
+
+  .PatBut:hover{
+    background-color: #ff7675;
+  }
+
+  .inpu {
+    float: left;
+    width: 95;
+  }
+  
+  .inpt {
+    float: left;
+    width: 95;
+    
+  }
+
+  .modalsi {
+    padding: 20px;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 10px;
+    border: #3459EC solid 1px;
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    z-index: 999;
+    padding-top: 100px;
+  }
+
+
+  h1 {
+    color: #3459EC;
+    margin-bottom: 10px;
+  }
+
+.alertMiniFormModal {
+    width:290px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    
+    /* box-shadow: 10px 10px 27px 0px rgba(255, 0, 0, 0.719); */
+
+
+    border: 1px solid rgb(255, 0, 0);
+    
+}
+
+
 
 /* 
 .alertMiniModal{

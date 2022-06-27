@@ -295,6 +295,7 @@ const Register = () => {
           <Link to="/Login">
             <p className={classes.Log}> Login </p>
           </Link>
+          
         </div>
         <div className={classes.righy}>
 
