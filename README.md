@@ -64,7 +64,7 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 <!-- header image of project -->
-![image1](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png)
+![image1](https://github.com/Justin-OwiStudent/Receptionist-App/blob/main/Mokcups/Mockup1.png)
 
 ### Project Description
 
@@ -121,17 +121,17 @@ You are able to add a Patient, Doctor and Appointment to the database using PHP,
 Here you have access to your medical application, on the dashboard you are able to see all the appointments that are made, you can remove and also update the appointment information.
 
 
-![image2](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/custom%20UI.png)
+![image2](https://github.com/Justin-OwiStudent/Receptionist-App/blob/main/Mokcups/Mockup1.png)
 ### Feature 2
 
 You are able to see all the patients listed on the database and you can edit or delete an individual patient, you can furthermore add a new patient to the database aswel.
 
-![image3](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/Feature2.jpg)
+![image3](https://github.com/Justin-OwiStudent/Receptionist-App/blob/main/Mokcups/Mockup3.png)
 ### Feature 3
 
 You can see all the doctors registered to your practicion over here, each having their own card, the doctors can be edited, deleted and also you can add a new doctor to the database.
 
-![image4](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/line.png)
+![image4](https://github.com/Justin-OwiStudent/Receptionist-App/blob/main/Mokcups/Mockup4.png)
 
 
 
@@ -192,9 +192,9 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image9](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-1.jpg)
+![image9](https://github.com/Justin-OwiStudent/Receptionist-App/blob/main/Mokcups/Mockup2.png)
 <br>
-![image10](https://github.com/Justin-OwiStudent/pokedexler/blob/main/src/components/Header/Main/img/mockup-4.jpg)
+
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
@@ -204,7 +204,7 @@ To see a run through of the application, click below:
 [View Demonstration](https://www.youtube.com/watch?v=h5MsvyMqyt8)
 
 
-See the [open issues](https://github.com/Justin-OwiStudent/pokedexler/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Justin-OwiStudent/Receptionist-App/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 ## Authors
