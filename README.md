@@ -64,7 +64,7 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 <!-- header image of project -->
-![image1](https://github.com/Justin-OwiStudent/Receptionist-App/blob/main/Mokcups/Mockup1.png)
+![image1](https://github.com/Justin-OwiStudent/Receptionist-App/blob/main/Mokcups/Mockup5.png)
 
 ### Project Description
 
