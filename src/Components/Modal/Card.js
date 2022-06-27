@@ -6,7 +6,6 @@ import classes from "./Modal.module.css";
 const Card = (props) => {
 
 
-    // if statement for male and female
 
     const [modal, setModal] = useState();
 
@@ -43,11 +42,11 @@ const Card = (props) => {
         <h2>{props.NameSurname} </h2>
 
         <div className={classes.ProfImage}></div>
-        {/* <p>patient Age:</p> */}
+        
         <h3>{props.Age}</h3>
-        {/* <p>patient Gender:</p> */}
+       
         <h3>{props.Gender}</h3>
-        {/* <p>patient Email:</p> */}
+       
         <h3>{props.Email}</h3>
         <h3>{props.Contact}</h3>
 

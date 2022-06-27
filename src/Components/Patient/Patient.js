@@ -38,7 +38,7 @@ const Patient = () => {
     .catch(error => {
       console.log(error)
     });
-    // window.location.reload();
+    window.location.reload();
   }
 
 
@@ -85,7 +85,7 @@ const Patient = () => {
           <input placeholder="Email" ref={Email} />
           <input placeholder="Contact" ref={Contact}/>
 
-          {/* <input placeholder="Name & Surname"></input> */}
+        
 
           <button className={classes.bott} onClick={AddPatient}> Add Patient</button>
 

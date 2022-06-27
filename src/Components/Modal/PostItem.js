@@ -2,70 +2,59 @@ import axios from "axios";
 import React, { useState } from "react";
 import EditAppoint from "./EditAppoint";
 import EditPost from "./EditPost";
-import classes from "./Modal.module.css"
+import classes from "./Modal.module.css";
 
 const PostItem = (props) => {
+  const [modal, setModal] = useState();
 
-    const [modal, setModal] = useState();
+  const editPost = () => {
+    setModal(
+      <EditAppoint
+        upRender={props.rerender}
+        rerender={setModal}
+        OriginalTime={props.AppointmentTime}
+        originalPatient={props.patient}
+        originalDoctor={props.Doctor}
+        id={props.uniqueId}
+      />
+    );
+  };
 
-    const editPost = () => {
-      setModal(<EditAppoint upRender={props.rerender} rerender={setModal} OriginalTime={props.AppointmentTime} originalPatient={props.patient} originalDoctor={props.Doctor} id={props.uniqueId}  />)
-    }
+  const deletePost = () => {
+    if (
+      window.confirm("Are you sure you want to delete this patient?") == true
+    ) {
+      let postId = { id: props.uniqueId };
 
-
-    const deletePost = () => {
-      if(window.confirm("Are you sure you want to delete this patient?") == true){
-        
-        let postId = {id: props.uniqueId}
-
-        axios.post('http://localhost/receptionistapplication/deleteApppoint.php', postId)
-        .then((res)=>{
+      axios
+        .post(
+          "http://localhost/receptionistapplication/deleteApppoint.php",
+          postId
+        )
+        .then((res) => {
           let data = res.data;
           console.log(data);
           props.rerender(true);
-      });
-
-      } else {
-        console.log("The Patient was not Deleted")
-      }
+        });
+    } else {
+      console.log("The Patient was not Deleted");
     }
-
-// model is edit post
+  };
 
   return (
-            <div>
-               {modal}
-                <div className={classes.rowe} id={props.key}>
-                    <div className={classes.prof}></div>
-                    <h2 className="patient">{props.patient}</h2>
-                    <h2 className="doctor">{props.doctor}</h2>
-                    <h2 className="time">{props.time}</h2>
+    <div>
+      {modal}
+      <div className={classes.rowe} id={props.key}>
+        <div className={classes.prof}></div>
+        <h2 className="patient">{props.patient}</h2>
+        <h2 className="doctor">{props.doctor}</h2>
+        <h2 className="time">{props.time}</h2>
 
-                    <div className={classes.trash} onClick={deletePost}></div>
-                    <div className={classes.edit} onClick={editPost}></div>
-                </div>
-            </div>
-           
-
-
-
-    // <div>
-    //   {modal}
-    //   <div id={props.uniqueId} className='post_item'>
-    //     <div className='postHeader'>
-    //       <h3 className='userPost'>{props.userpost}</h3>
-    //       <h6 className='date'>{props.date}</h6>
-    //     </div>
-    //       <p className="mess">{props.message}</p>
-    //       <div className='postUi'>
-    //         <p className='edit' onClick={editPost}>Edit Post</p>
-    //         <p className='delete'  onClick={deletePost}>Delete Post</p>
-    //       </div>
-          
-    //   </div>
-      
-    // </div>
-  )
-}
+        <div className={classes.trash} onClick={deletePost}></div>
+        <div className={classes.edit} onClick={editPost}></div>
+      </div>
+    </div>
+  );
+};
 
 export default PostItem;

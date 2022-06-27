@@ -6,16 +6,18 @@
      background-size: 100% 100%;
      float: left;
      /* background-image: url(../images/BigBacki.jpg); */
-     background-color: rgb(124, 124, 124);
+     /* background-color: rgb(124, 124, 124); */
+    background-color: #275169;
+  
 }
 
 .registerCon{
     width: 45%;
-    height: 480px;
+    height: 680px;
     background-color: #ffffff;
     text-align: center;
     margin-left: 220px;
-    margin-top: 200px;
+    margin-top: 100px;
     border-radius: 5px;
     padding-top: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
@@ -23,16 +25,46 @@
 
   }
 
+  .uplo {
+    margin-left: -280px;
+    margin-bottom: 20px;
+  }
+
+.imgInput {
+  width: 280px;
+  height: 120px;
+  background-color: #3459ec00;
+  background-size: 100%;
+  position: relative;
+}
+  
+.profile_img {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  background-size: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 200px;
+}
+
+
+  /* .imageArea{
+    width: 200px;
+    
+  } */
+
+
   .righy {
     width: 26.5%;
     height: 500px;
     position: absolute;
     right: 150px;
     top: 50px;
-    background-image: url(../images/chromosome.png);
+    
   }
 
-  input{
+  .amp{
     width: 70%;
     margin: 0 auto;
     height: 35px;
@@ -87,6 +119,8 @@
     border-radius: 5px;
     
 }
+
+
 
 .statusIconUser{
     width: 28px;

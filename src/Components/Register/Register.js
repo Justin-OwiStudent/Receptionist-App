@@ -21,6 +21,7 @@ const Register = () => {
     contact: "",
     password: "",
     passwordCon: "",
+    image: ''
   });
 
   const [nameError, setNameError] = useState();
@@ -45,6 +46,22 @@ const Register = () => {
     }
   };
 
+  const imageVal = (e) => {
+    let file = e.target.files[0]
+    let reader = new FileReader();
+    
+    reader.onloadend = function() {
+      let imgFile = reader.result;
+ 
+      setInputs({...inputs, image: imgFile});
+
+      let image = new Image();
+      image.src = reader.result;
+      document.getElementById('profileimg').appendChild(image);
+    }
+    reader.readAsDataURL(file);
+  }
+
   const emailVal = (e) => {
     const mailRegex =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -63,7 +80,6 @@ const Register = () => {
     axios
       .post("http://localhost/receptionistapplication/authenticateEmail.php", inputs)
       .then(function (response) {
-        console.log(response);
         if (response.data === "Available") {
           setEmailIcon(Okay);
           setEmailAvail();
@@ -90,7 +106,6 @@ const Register = () => {
     axios
       .post("http://localhost/receptionistapplication/authenticateUser.php", inputs)
       .then(function (response) {
-        console.log(response);
         if (response.data === "Available") {
           setUserIcon(Okay);
           setUsernameAvail();
@@ -205,7 +220,6 @@ const Register = () => {
       axios
         .post("http://localhost/receptionistapplication/RegisterUser.php", inputs)
         .then(function (response) {
-          console.log(response);
 
 
           if(response.status === 200){
@@ -219,12 +233,20 @@ const Register = () => {
   return (
     <>
       <div className={classes.MainI}>
-        <h1>welcome lets get you reg</h1>
         <div className={classes.registerCon}>
           <h1>Register Form</h1>
           <form onSubmit={handleSubmit}>
             
+            <div className={classes.imageArea}>
+              <p className={classes.uplo}>Upload a Profile Image</p>
+              <div id="profileimg" className={classes.profile_img}>
+                <div id="profileimg"></div>
+              </div>
+              <input name="imageUrl" className={classes.imgInput} type="file" onChange={imageVal}/>
+            </div>
+
             <input
+              className={classes.amp}
               name="names"
               type="text"
               placeholder="first"
@@ -237,6 +259,7 @@ const Register = () => {
             </div>
             
             <input
+              className={classes.amp}
               name="email"
               type="email"
               placeholder="Your Email"
@@ -246,6 +269,7 @@ const Register = () => {
             {nameError}
             
             <input
+              className={classes.amp}
               name="contact"
               type="number"
               placeholder="Contact"
@@ -254,6 +278,7 @@ const Register = () => {
             {contactError}
             
             <input
+              className={classes.amp}
               name="username"
               type="text"
               placeholder="Username"
@@ -265,6 +290,7 @@ const Register = () => {
             {usernameAvail}
             
             <input
+              className={classes.amp}
               name="password"
               type="password"
               placeholder="Password"
@@ -275,6 +301,7 @@ const Register = () => {
             {passwordError}
             
             <input
+              className={classes.amp}
               type="password"
               placeholder="Confirm Password"
               onChange={passwordConVal}
@@ -295,7 +322,7 @@ const Register = () => {
           <Link to="/Login">
             <p className={classes.Log}> Login </p>
           </Link>
-          
+
         </div>
         <div className={classes.righy}>
 

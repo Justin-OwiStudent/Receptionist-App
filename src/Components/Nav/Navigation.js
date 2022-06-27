@@ -1,24 +1,42 @@
-
 import React, { useState, useEffect } from "react";
 import classes from "./Nav.module.css";
 import { Link, Navigate, NavLink, Outlet } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Navigation = () => {
-
   const navigate = useNavigate();
 
   const [logged, setLogged] = useState();
 
-  useEffect(()=>{
+  const [renderImage, setRenderImage] = useState();
+
+  useEffect(() => {
     let personName = sessionStorage.getItem("activeUser");
     setLogged(personName);
-  }, [])
+
+    let userProfile = { activeUser: personName };
+
+    axios
+      .post(
+        "http://localhost/receptionistapplication/readProfile.php",
+        userProfile
+      )
+      .then((res) => {
+        let data = res.data;
+        let source = data[0].imgPath;
+        let renderpath = "http://localhost/receptionistapplication/" + source;
+        setRenderImage(renderpath);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const setLogout = () => {
-    sessionStorage.clear()
-    Navigate('/');
-  }
+    sessionStorage.clear();
+    Navigate("/");
+  };
 
   return (
     <>
@@ -46,7 +64,7 @@ const Navigation = () => {
         </Link>
 
         <div className={classes.profile}>
-          <div className={classes.pfp}></div>
+          <div className={classes.pfp} src={renderImage}></div>
           <h5>{logged}</h5>
         </div>
 
@@ -59,7 +77,6 @@ const Navigation = () => {
         </Link>
         <Outlet />
       </div>
-      
     </>
   );
 };

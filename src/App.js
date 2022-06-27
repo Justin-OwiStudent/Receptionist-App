@@ -30,11 +30,8 @@ function App() {
         <Route path="/Patient" element={<Patient />} />
     </Routes>
     
-{/* 
-      <Navigation></Navigation>
-      <Appointments></Appointments> 
-      <NewAppoint></NewAppoint> */}
-      
+
+
     </div>
   );
 }
