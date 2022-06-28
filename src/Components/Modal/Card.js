@@ -19,6 +19,7 @@ const Card = (props) => {
         
         let postId = {id: props.uniqueId}
         
+        console.log(postId)
 
         axios.post('http://localhost/receptionistapplication/DeletePatient.php', postId)
         .then((res)=>{
