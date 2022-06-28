@@ -15,7 +15,7 @@ const Appointments = () => {
     axios.get("http://localhost/receptionistapplication/ReadAppointments.php")
     .then((res)=> {
         let data = res.data;
-        let renderPost = data.map((item) => <PostItem key={item.id} time={item.AppointmentDate} patient={item.Patient} doctor={item.Doctor} />);
+        let renderPost = data.map((item) => <PostItem uniqueId={item.id} key={item.id} time={item.AppointmentDate} patient={item.Patient} doctor={item.Doctor} />);
         
         setPosts(renderPost);   
         setRenderPost(false);

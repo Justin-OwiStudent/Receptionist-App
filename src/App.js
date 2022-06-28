@@ -16,16 +16,11 @@ import Dashboard from "./Components/dashboard/Dashboard";
 function App() {
   return (
     <div className="App">
-
-     
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Login" element={<Login />} />
-
         <Route path="/Dashboard" element={<Dashboard />} />
-
-
         <Route path="/Doctor" element={<Doctor />} />
         <Route path="/Patient" element={<Patient />} />
     </Routes>

@@ -87,7 +87,7 @@ const Doctor = () => {
     axios.get("http://localhost/receptionistapplication/ReadDoctors.php")
     .then((res)=> {
         let data = res.data;
-        let renderPost = data.map((item) => <DocCard key={item.id} rerender={setRenderPost} NameSurname={item.NameSurname} Age={item.Age} Email={item.Email} Contact={item.Contact} Specialization={item.Specialization}/>);
+        let renderPost = data.map((item) => <DocCard uniqueId={item.id} key={item.id} rerender={setRenderPost} NameSurname={item.NameSurname} Age={item.Age} Email={item.Email} Contact={item.Contact} Specialization={item.Specialization}/>);
         
         setPosts(renderPost);   
         setRenderPost(false);

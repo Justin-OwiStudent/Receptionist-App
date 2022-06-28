@@ -73,7 +73,16 @@ const EditAppoint = (props) => {
 
         <input className={classes.inpt} id="updateRoom" placeholder="Edit Appointment Room" onChange={RoomChange}/>
 
-        <input className={classes.inpt} id="updateDate" placeholder="Edit Appointment Date" onChange={DateChange}/>
+        <input 
+        
+        type="date"
+        
+        name="trip-start"
+        min="2022-01-01"
+        max="2022-12-31"
+        placeholder="2022-06-26"
+
+        className={classes.inpt} id="updateDate" onChange={DateChange}/>
       </form>
 
       <button type="submit" className={classes.PatBut} onClick={updatePost}>Edit this post</button>

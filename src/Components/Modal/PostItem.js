@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import EditAppoint from "./EditAppoint";
 import EditPost from "./EditPost";
 import classes from "./Modal.module.css";
@@ -20,24 +20,24 @@ const PostItem = (props) => {
     );
   };
 
-  const deletePost = () => {
-    if (
-      window.confirm("Are you sure you want to delete this patient?") == true
-    ) {
-      let postId = { id: props.uniqueId };
+  const [ deleteId, setDeleteId ] = useState('');
+  useEffect(() => {
+      setDeleteId(props.uniqueId)
+  }, [props.uniqueId])
 
-      axios
-        .post(
-          "http://localhost/receptionistapplication/deleteApppoint.php",
-          postId
-        )
-        .then((res) => {
+
+  const deletePost = () => {
+    if (window.confirm("Are you sure you want to delete this Appointment?") == true) {
+
+      axios.post("http://localhost/receptionistapplication/DeleteAppoint.php", {id: deleteId})
+      .then((res) => {
           let data = res.data;
           console.log(data);
+
           props.rerender(true);
         });
     } else {
-      console.log("The Patient was not Deleted");
+      console.log("The Appointment was not Deleted");
     }
   };
 
